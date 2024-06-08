@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
+import logo from "../src/assets/shared/logo.svg";
 interface Props {
   number: number;
 }
@@ -9,11 +10,7 @@ const NavBar = ({ number }: Props) => {
   return (
     <nav className="flex h-24	justify-between items-center	 mt-10 ml-40">
       <Link to={"/"}>
-        <img
-          className="w-12 h-12"
-          src="src/assets/shared/logo.svg"
-          alt="logo"
-        />
+        <img className="w-12 h-12" src={logo} alt="logo" />
       </Link>
       <span className={styles.span}></span>
       <ul className={` 	${styles.ul}`}>
