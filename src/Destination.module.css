@@ -1,0 +1,71 @@
+.bodyContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* body image */
+.image {
+  width: 445px;
+  height: 445px;
+  object-fit: cover;
+  object-position: center;
+}
+.bodyImageContainer {
+  margin-left: 166px;
+}
+
+/* body text */
+.h2Tag {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.ulConatiner {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.bodyText {
+  width: 445px;
+  height: 472px;
+  margin-right: 163px;
+  margin-top: 100px;
+}
+.hoverAnimation {
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(#ffffff 0 0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+  padding-bottom: 15px;
+}
+.hoverAnimation:hover {
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+}
+.selected::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transition: 0.1s ease-in-out;
+}
+.spanLine {
+  display: block;
+  height: 2px;
+  background: #ffffff;
+  margin: 35px 0;
+}
+.h1Tag {
+  font-family: "Bellefair", serif;
+}
+.pTag {
+  font-family: "Barlow", sans-serif;
+}
+.h3Tag {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.h3Child {
+  font-family: "Bellefair", serif;
+}

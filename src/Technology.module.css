@@ -1,0 +1,71 @@
+.bodyContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 76px;
+  margin-left: 170px;
+}
+
+/* body text */
+.h2Tag {
+  font-size: 28px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.bold {
+  font-weight: bold;
+  opacity: 50%;
+  margin-right: 20px;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-right: 80px;
+}
+.button {
+  font-size: 28px;
+  font-weight: 400;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid white;
+}
+.button:hover {
+  border: 2px solid white;
+}
+.buttonSelected {
+  font-weight: 600;
+
+  font-size: 28px;
+  color: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+.pTag {
+  width: 444px;
+  height: 192px;
+  line-height: 32px;
+  font-size: 18px;
+  margin-top: 17px;
+  font-family: "Barlow", sans-serif;
+}
+/* image styles */
+.bodyImage {
+  width: 515px;
+  height: 527px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.h3Tag {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.h1Tag {
+  font-family: "Bellefair", serif;
+}
