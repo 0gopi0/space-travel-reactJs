@@ -34,14 +34,14 @@ const Crew = () => {
         <NavBar number={2} />
       </header>
       <main className={styles.bodyContainer}>
-        <section role="main_text" className={styles.bodyText}>
+        <section role="banner" className={styles.bodyText}>
           <h3 className={styles.h3Tag}>
             <span className={styles.h3Span}>02</span> Meet your crew
           </h3>
           <h2 className={styles.h2Tag}>{position[selected]}</h2>
           <h1 className={styles.h1Tag}>{names[selected]}</h1>
           <p className={styles.pTag}>{description[selected]}</p>
-          <ul className="flex gap-4 mt-12">
+          <ul role="navigation" className="flex gap-4 mt-12">
             <button
               className={`h-5	w-5 rounded-full hover:bg-zinc-400 ${
                 selected === 0 ? " bg-white" : "bg-zinc-600	"
@@ -68,7 +68,7 @@ const Crew = () => {
             ></button>
           </ul>
         </section>
-        <section role="image" className={styles.bodyImage}>
+        <section role="img" className={styles.bodyImage}>
           <img className={`${styles.image} `} src={images[selected]} />
         </section>
       </main>

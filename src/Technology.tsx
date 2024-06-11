@@ -21,11 +21,11 @@ const Technology = () => {
         <NavBar number={3} />
       </header>
       <main className={styles.bodyContainer}>
-        <section role="main_text" className={styles.bodyText}>
+        <section role="banner" className={styles.bodyText}>
           <h2 className={styles.h2Tag}>
             <span className={styles.bold}>03</span> Space launch 101
           </h2>
-          <section role="buttons_text" className="flex mt-28">
+          <section role="navigation" className="flex mt-28">
             <span className={styles.buttonsContainer}>
               <button
                 className={
@@ -61,7 +61,7 @@ const Technology = () => {
             </div>
           </section>
         </section>
-        <section role="image" className={styles.bodyImage}>
+        <section role="img" className={styles.bodyImage}>
           <img className={styles.image} src={images[selection]} />
         </section>
       </main>

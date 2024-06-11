@@ -26,18 +26,18 @@ const Destination = () => {
         <NavBar number={1} />
       </header>
       <main className={styles.bodyContainer}>
-        <section role="image_section" className={styles.bodyImageContainer}>
+        <section role="banner" className={styles.bodyImageContainer}>
           <h2 className="text-3xl	mb-20 mt-20">
             <span className={`opacity-70	mr-4 font-semibold ${styles.h2Tag}`}>
               01
             </span>{" "}
             Pick your destination
           </h2>
-          <section role="image" className={styles.bodyImage}>
+          <section role="img" className={styles.bodyImage}>
             <img className={styles.image} src={images[selection]} />
           </section>
         </section>
-        <section role="links" className={styles.bodyText}>
+        <section role="navigation" className={styles.bodyText}>
           <ul
             className={`flex gap-9	text-base	font-normal ${styles.ulConatiner}`}
           >

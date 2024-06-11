@@ -9,7 +9,7 @@ const NavBar = ({ number }: Props) => {
 
   return (
     <section
-      role="header"
+      role="navigation"
       className="flex h-24	justify-between items-center	 mt-10 ml-40"
     >
       <Link to={"/"}>
