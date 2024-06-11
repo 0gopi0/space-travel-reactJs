@@ -18,7 +18,7 @@ const Home = () => {
         <NavBar number={0} />
       </header>
       <main className={styles.bodyContainer}>
-        <section role="contentinfo" className={styles.bodyText}>
+        <section role="banner" className={styles.bodyText}>
           <h2 className={styles.bodyTextH2}>SO, YOU WANT TO TRAVEL TO</h2>
           <h1 className={styles.bodyTextH1}>SPACE</h1>
           <p className={styles.bodyTextP}>
@@ -29,7 +29,6 @@ const Home = () => {
           </p>
         </section>
         <section
-          role="link"
           className={`${styles.bodyImageTransparent} `}
           style={{ backgroundColor: parentColor }}
         >
