@@ -18,7 +18,7 @@ const Home = () => {
         <NavBar number={0} />
       </header>
       <main className={styles.bodyContainer}>
-        <section role="banner" className={styles.bodyText}>
+        <section className={styles.bodyText}>
           <h2 className={styles.bodyTextH2}>SO, YOU WANT TO TRAVEL TO</h2>
           <h1 className={styles.bodyTextH1}>SPACE</h1>
           <p className={styles.bodyTextP}>
