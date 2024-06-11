@@ -21,23 +21,23 @@ const Destination = () => {
   const distance = ["384,400 km", "225 MIL. KM", "628 MIL. KM", "1.6 BIL. KM"];
   const time = ["3 Days", "9 Months", "3 YEARS", "7 YEARS"];
   return (
-    <div style={Styles}>
-      <div>
+    <body style={Styles}>
+      <header>
         <NavBar number={1} />
-      </div>
-      <div className={styles.bodyContainer}>
-        <div className={styles.bodyImageContainer}>
+      </header>
+      <main className={styles.bodyContainer}>
+        <section role="image_section" className={styles.bodyImageContainer}>
           <h2 className="text-3xl	mb-20 mt-20">
             <span className={`opacity-70	mr-4 font-semibold ${styles.h2Tag}`}>
               01
             </span>{" "}
             Pick your destination
           </h2>
-          <div className={styles.bodyImage}>
+          <section role="image" className={styles.bodyImage}>
             <img className={styles.image} src={images[selection]} />
-          </div>
-        </div>
-        <div className={styles.bodyText}>
+          </section>
+        </section>
+        <section role="links" className={styles.bodyText}>
           <ul
             className={`flex gap-9	text-base	font-normal ${styles.ulConatiner}`}
           >
@@ -117,9 +117,9 @@ const Destination = () => {
               <p className={`text-2xl ${styles.h3Child}`}>{time[selection]}</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
+      </main>
+    </body>
   );
 };
 

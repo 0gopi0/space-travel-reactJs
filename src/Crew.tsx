@@ -29,12 +29,12 @@ const Crew = () => {
     "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.",
   ];
   return (
-    <div style={Styles} className={styles.homePage}>
-      <div>
+    <body style={Styles} className={styles.homePage}>
+      <header>
         <NavBar number={2} />
-      </div>
-      <div className={styles.bodyContainer}>
-        <div className={styles.bodyText}>
+      </header>
+      <main className={styles.bodyContainer}>
+        <section role="main_text" className={styles.bodyText}>
           <h3 className={styles.h3Tag}>
             <span className={styles.h3Span}>02</span> Meet your crew
           </h3>
@@ -67,12 +67,12 @@ const Crew = () => {
               onClick={() => setSelected(3)}
             ></button>
           </ul>
-        </div>
-        <div className={styles.bodyImage}>
+        </section>
+        <section role="image" className={styles.bodyImage}>
           <img className={`${styles.image} `} src={images[selected]} />
-        </div>
-      </div>
-    </div>
+        </section>
+      </main>
+    </body>
   );
 };
 

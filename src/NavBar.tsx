@@ -8,12 +8,15 @@ const NavBar = ({ number }: Props) => {
   const active = number;
 
   return (
-    <nav className="flex h-24	justify-between items-center	 mt-10 ml-40">
+    <section
+      role="header"
+      className="flex h-24	justify-between items-center	 mt-10 ml-40"
+    >
       <Link to={"/"}>
         <img className="w-12 h-12" src={logo} alt="logo" />
       </Link>
       <span className={styles.span}></span>
-      <ul className={` 	${styles.ul}`}>
+      <nav className={` 	${styles.ul}`}>
         <Link to="/" className={`relative ${styles.Link}`}>
           <span className={styles.bold}>00</span> Home
           <span
@@ -40,8 +43,8 @@ const NavBar = ({ number }: Props) => {
             className={`${active === 3 ? styles.selected : styles.hoverEffect}`}
           ></span>
         </Link>
-      </ul>
-    </nav>
+      </nav>
+    </section>
   );
 };
 

@@ -13,12 +13,12 @@ const Home = () => {
   };
   const Styles = getData(1);
   return (
-    <div style={Styles} className="	min-h-screen	">
-      <div>
+    <body style={Styles} className="	min-h-screen	">
+      <header>
         <NavBar number={0} />
-      </div>
-      <div className={styles.bodyContainer}>
-        <div className={styles.bodyText}>
+      </header>
+      <main className={styles.bodyContainer}>
+        <section role="main_text" className={styles.bodyText}>
           <h2 className={styles.bodyTextH2}>SO, YOU WANT TO TRAVEL TO</h2>
           <h1 className={styles.bodyTextH1}>SPACE</h1>
           <p className={styles.bodyTextP}>
@@ -27,8 +27,9 @@ const Home = () => {
             Well sit back, and relax because we’ll give you a truly out of this
             world experience!
           </p>
-        </div>
-        <div
+        </section>
+        <section
+          role="main_image"
           className={`${styles.bodyImageTransparent} `}
           style={{ backgroundColor: parentColor }}
         >
@@ -41,9 +42,9 @@ const Home = () => {
               EXPLORE
             </div>
           </Link>
-        </div>
-      </div>
-    </div>
+        </section>
+      </main>
+    </body>
   );
 };
 

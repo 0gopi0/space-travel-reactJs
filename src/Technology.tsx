@@ -16,16 +16,16 @@ const Technology = () => {
   const images = [p1, p2, p3];
   const [selection, setSelection] = useState(0);
   return (
-    <div style={Styles} className="	min-h-screen	">
-      <div>
+    <body style={Styles} className="	min-h-screen	">
+      <header>
         <NavBar number={3} />
-      </div>
-      <div className={styles.bodyContainer}>
-        <div className={styles.bodyText}>
+      </header>
+      <main className={styles.bodyContainer}>
+        <section role="main_text" className={styles.bodyText}>
           <h2 className={styles.h2Tag}>
             <span className={styles.bold}>03</span> Space launch 101
           </h2>
-          <div className="flex mt-28">
+          <section role="buttons_text" className="flex mt-28">
             <span className={styles.buttonsContainer}>
               <button
                 className={
@@ -59,13 +59,13 @@ const Technology = () => {
               </h1>
               <p className={styles.pTag}> {pTags[selection]}</p>
             </div>
-          </div>
-        </div>
-        <div className={styles.bodyImage}>
+          </section>
+        </section>
+        <section role="image" className={styles.bodyImage}>
           <img className={styles.image} src={images[selection]} />
-        </div>
-      </div>
-    </div>
+        </section>
+      </main>
+    </body>
   );
 };
 
