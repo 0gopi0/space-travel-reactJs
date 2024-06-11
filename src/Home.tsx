@@ -2,6 +2,7 @@ import NavBar from "./NavBar";
 import getData from "./data";
 import styles from "./Home.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [parentColor, setParentColor] = useState<string>("");
   const handleMouseOver = () => {
@@ -31,13 +32,15 @@ const Home = () => {
           className={`${styles.bodyImageTransparent} `}
           style={{ backgroundColor: parentColor }}
         >
-          <div
-            className={styles.bodyImage}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-            EXPLORE
-          </div>
+          <Link to="/destination">
+            <div
+              className={styles.bodyImage}
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
+            >
+              EXPLORE
+            </div>
+          </Link>
         </div>
       </div>
     </div>
