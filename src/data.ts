@@ -11,5 +11,6 @@ export default function getData(n: number) {
     backgroundRepeat: "no-repeat",
     width: "100vw",
     overflow: "hidden",
+    height: "100vh",
   };
 }
