@@ -6,7 +6,7 @@ import Home from "./Home.tsx";
 import Destination from "./Destination.tsx";
 import Crew from "./Crew.tsx";
 import Technology from "./Technology.tsx";
-
+//main
 const router = createBrowserRouter([
   {
     path: "/",
